@@ -1,0 +1,150 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 10%, 34%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: Outfit, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0;
+    background-color: var(--stone-100);
+    color: var(--stone-600);
+    text-shadow: 1px 1px 1px var(--rose-50);
+
+}
+
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: 400 700;
+}
+
+main {
+    width: 60vw;
+    background-color: var(--rose-50);
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 320px;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1,
+h2 {
+    font-family: "Young Serif", serif;
+    opacity: 0.8;
+    text-shadow: none;
+}
+
+h2 {
+    color: var(--brown-800);
+}
+
+#preparation-div {
+    background-color: var(--rose-50);
+    line-height: 3em;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#preparation-div li {
+    list-style-position: inside;
+}
+
+#preparation-div h2 {
+    color: var(--rose-800);
+    font-family: Outfit, sans-serif;
+}
+
+#preparation-div span {
+    font-weight: bold;
+}
+
+#ingredients li {
+    list-style-position: inside;
+    line-height: 3rem;
+}
+
+#instructions li {
+    padding-left: 1rem;
+    margin: 1rem;
+}
+
+#instructions div {
+    padding-left: 0.5rem;
+}
+
+#instructions span {
+    font-weight: bold;
+}
+
+h2 {
+    margin: 1rem 0;
+}
+
+#nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 1rem;
+    ;
+}
+
+#nutrition tr {
+    border-top: 1px solid var(--stone-900);
+    height: 3rem;
+    ;
+    width: 50%;
+}
+
+#nutrition tr:first-child {
+    border-top: none;
+}
+
+#nutrition th {
+    padding-left: 2rem;
+    width: 50%;
+    color: var(--stone-600);
+    text-shadow: none;
+}
+
+#nutrition td {
+    color: var(--brown-800)
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 90vw;
+    }
+
+}
